@@ -8,6 +8,7 @@ env:
   MONGODB_DB_NAME: gha-demo
 jobs:
   test:
+    environment: testing #the environment from github environments
     env:
       PORT: 8080
       MONGODB_CLUSTER_ADDRESS: cluster0.dbpkxn5.mongodb.net
@@ -15,6 +16,7 @@ jobs:
       MONGODB_PASSWORD: ${{ secrets.MONGODB_PASSWORD }}
       # MONGODB_USERNAME: sashaDevOps
       # MONGODB_PASSWORD: NXtRIhvuAKdSn11S
+      # SRn4V3mu82iUgUTJ
     environment: testing
     runs-on: ubuntu-latest
     steps:
