@@ -17,7 +17,7 @@ jobs:
       # MONGODB_USERNAME: sashaDevOps
       # MONGODB_PASSWORD: NXtRIhvuAKdSn11S
       # SRn4V3mu82iUgUTJ
-    environment: testing
+    
     runs-on: ubuntu-latest
     steps:
       - name: Get Code
