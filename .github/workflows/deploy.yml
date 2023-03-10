@@ -31,10 +31,10 @@ jobs:
         run: npm test
       - name: Output information
         run: |
-          echo "MONGODB_USERNAME: ${{ env.MONGODB_USERNAME }}"
-    # Missing the following section, which caused the syntax error
-    outputs:
-      test-results: ${{ steps.run-tests.outputs.test-results }}
+          echo "MONGODB_USERNAME= ${{ env.MONGODB_USERNAME }}"
+    # # Missing the following section, which caused the syntax error
+    # outputs:
+    #   test-results: ${{ steps.run-tests.outputs.test-results }}
   deploy:
     needs: test
     runs-on: ubuntu-latest
@@ -46,3 +46,4 @@ jobs:
           
 #MONGODB_DB_NAME == Availiable
 #MONGODB_USERNAME == Not
+ 
